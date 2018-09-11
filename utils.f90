@@ -21,11 +21,11 @@ contains
 
     subroutine print_rows(matrix, size)
         implicit none
-        integer :: i
+        integer :: j
         integer, intent(in) :: size
-        real(kind = precision), intent(inout), dimension(size,size) :: matrix
-        do i = 1, size
-            print *, i, ": ", matrix(:, i)
+        real(kind = precision), intent(in), dimension(size,size) :: matrix
+        do j = 1, size
+            print *, j, ": ", matrix(:, j)
         end do
     end subroutine print_rows
 
