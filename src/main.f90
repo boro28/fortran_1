@@ -9,7 +9,7 @@ program main
     real(kind = 16), allocatable, dimension(:) :: expected, error
     integer :: i
 
-    do N = 1, 1000
+    do N = 2, 1000
 
         allocate(matrix(0:N, 0:N))
         allocate(vector(0:N))
