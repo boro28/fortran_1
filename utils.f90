@@ -13,8 +13,8 @@ contains
         implicit none
         integer :: i
         integer, intent(in) :: size
-        real(kind = precision), intent(inout), dimension(size,size) :: matrix
-        do i = 1, size
+        real(kind = precision), intent(in):: matrix(0:size,0:size)
+        do i = 0, size
             print *, matrix(i, i)
         end do
     end subroutine print_diagonal
@@ -23,8 +23,8 @@ contains
         implicit none
         integer :: j
         integer, intent(in) :: size
-        real(kind = precision), intent(in), dimension(size,size) :: matrix
-        do j = 1, size
+        real(kind = precision), intent(in) :: matrix(0:size,0:size)
+        do j = 0, size
             print *, j, ": ", matrix(:, j)
         end do
     end subroutine print_rows
