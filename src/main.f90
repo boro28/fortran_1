@@ -31,7 +31,7 @@ program main
 
         error = vector - expected
 
-        print '(i6,";",f15.7,"")', N, (SUM(ABS(error)) / size(error))
+        print  *,N,";", (SUM(ABS(error)) / size(error)), ""
 
         deallocate(matrix)
         deallocate(vector)
