@@ -9,10 +9,10 @@ bash results.sh
 ```
 
 ### Kind 4
-Graph internpretation of result
-![Result](./tests.png)
+![Result](./results4.png)
 
 ### Kind 8
-
+![Result](./results8.png)
 
 ### Kind 16
+![Result](./results16.png)
